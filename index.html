@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lamanhduy</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <script src="./JS/jquery-3.6.0.min.js"></script>
+    <script src="./JS/bootstrap.min.js"></script>
+    <script src="./JS/index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <img src="./IMG/paner.jpg" alt="" class="img-fluid" width="100%">
+        </div>
+        <div class="row p d-flex justify-content-center bg-dark">
+            <button type="button" class="btn  btn-dark"> ĐĂNG NHẬP</button>
+            <button type="button" class="btn  btn-dark" data-toggle="modal" data-target ="#myModal"> ĐĂNG KÝ</button>
+        </div>
+        <h4 class="text-center">DANH SÁCH ĐỘI TUYỂN VIỆT NAM</h4>
+        <div class="col-xs-12">
+            <table class="table table-striped" role="table" id="danhSach">
+                <tr>
+                    <th>STT</th>
+                    <th>Họ Tên</th>
+                    <th>Số Áo</th>
+                    <th>Câu Lạc Bộ</th>
+                    <th>Ngày Tập Trung</th>
+                    <th>Điện thoại</th>
+                    <th>Ảnh đại diện</th>
+                </tr>
+            </table>
+        </div>
+        <footer>
+            <div class="row p-2 bg-dark  justify-content-center">
+                <p style="color:#fff;margin: 0;">Mã Sinh Viên:18031311-Lâm Anh Duy Lớp </p>
+            </div>
+        </footer>
+    </div>
+    <div class="modal fade" role="dialog" id="myModal" tabindex="-1 " aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-center">
+                    <h2>THÔNG TIN CÁ NHÂN</h2>
+                </div>
+                <div class="modal-body">
+                    <form action="" role="form" class="form-horizontal">
+                        <label for="name" class="control-label col-xs-3">Họ tên</label>
+                        <div class="col-xs-9">
+                            <input type="text" name="name" id="name" class="form-control">
+                            <span class="text-danger" id="tbName">*</span>
+                        </div>
+                        <label for="name" class="control-label col-xs-3"> Số áo</label>
+                        <div class="col-xs-9">
+                            <input type="text" name="ao" id="ao" class="form-control">
+                            <span class="text-danger" id="tbAo">*</span>
+                        </div>
+                        <label for="name" class="control-label col-xs-3">Câu Lạc Bộ</label>
+                        <div class="col-xs-9">
+                            <input type="text" name="diachi" id="DC" class="form-control">
+                            <span class="text-danger" id="tbDC">*</span>
+                        </div>
+                        <label for="name" class="control-label col-xs-3">Ngày tập trung</label>
+                        <div class="col-xs-9">
+                            <input type="date"  id="NTT" class="form-control">
+                            <span class="text-danger" id="tbNTT">*</span>
+                        </div>
+                        <label for="name" class="control-label col-xs-3">Số điện thoại</label>
+                        <div class="col-xs-9">
+                            <input type="text"  id="SDT" class="form-control">
+                            <span class="text-danger" id="tbSDT">*</span>
+                        </div>
+                        <label for="name" class="control-label col-xs-3">Ảnh đại diện</label>
+                        <div class="col-xs-9">
+                            <input type="file" id="ADD" class="form-control">
+                            <span class="text-danger" id="tbAdd">*</span>
+                        </div>
+                        <div class="modal-footer">
+
+                            <button class="btn btn-success btn-group-justify" id="Save" type="button">Lưu</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
